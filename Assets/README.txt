@@ -1,0 +1,2 @@
+domyślne ścieżki dla urządzeń:https://docs.unity3d.com/ScriptReference/Application-persistentDataPath.html
+aby wgrać zdjęcie trzeba umieścić w tym folderze plik png o takiej samej nazwie co parametr "name" w xml

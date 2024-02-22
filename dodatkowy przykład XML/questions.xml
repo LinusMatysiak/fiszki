@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<questions>
+	<questionform name="test">
+		<question>czy bas to prawdziwy instrument</question>
+		<answerstext>
+			<answer>nie</answer>
+			<answer>nie wiem</answer>
+			<answer>chyba nie</answer>
+			<answer>raczej nie</answer>
+		</answerstext>
+		<answertype>buttons</answertype>
+		<correctanswer>0</correctanswer>
+	</questionform>
+	<questionform name="floppa">
+		<question>co to za jerzozwierz</question>
+		<answerstext>
+			<answer>tak</answer>
+			<answer>nie</answer>
+		</answerstext>
+		<answertype>text</answertype>
+		<correctanswer>floppa</correctanswer>
+	</questionform>
+	<questionform name="pies">
+		<question>co to za jerzozwierz</question>
+		<answerstext>
+			<answer>tak</answer>
+			<answer>nie</answer>
+		</answerstext>
+		<answertype>text</answertype>
+		<correctanswer>pies</correctanswer>
+	</questionform>
+	<questionform name="rock">
+		<question>tak czy nie</question>
+		<answerstext>
+			<answer>tak</answer>
+			<answer>nie</answer>
+		</answerstext>
+		<answertype>buttons</answertype>
+		<correctanswer>0</correctanswer>
+	</questionform>
+</questions>

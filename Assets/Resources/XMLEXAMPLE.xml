@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Databases>
-	<Database name="StolicaPolski">
+<questions>
+	<questionform name="StolicaPolski">
 		<question>Co jest stolicą Polski</question>
 		<answerstext>
 			<answer>Warszawa</answer>
@@ -8,7 +8,16 @@
 			<answer>Paryż</answer>
 			<answer>Szczecin</answer>
 		</answerstext>
-		<answerType>buttons</answerType>
+		<answertype>buttons</answertype>
 		<correctanswer>0</correctanswer>
-	</Database>
-</Databases>
+	</questionform>
+	<questionform name="StolicaNiemiec">
+		<question>Co jest stolicą Niemiec</question>
+		<answerstext>
+			<answer>Warszawa</answer>
+			<answer>Berlin</answer>
+		</answerstext>
+		<answertype>text</answertype>
+		<correctanswer>Berlin</correctanswer>
+	</questionform>
+</questions>

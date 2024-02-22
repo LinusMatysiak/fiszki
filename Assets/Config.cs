@@ -3,9 +3,9 @@ using UnityEngine;
 
 public class Config : MonoBehaviour
 {
-    public static string FilePathGlobal;
+    public static string filePathGlobal;
     private void Awake()
     {
-        FilePathGlobal = Application.persistentDataPath;
+        filePathGlobal = Application.persistentDataPath;
     }
 }

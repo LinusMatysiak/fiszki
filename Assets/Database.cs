@@ -10,8 +10,8 @@ public class Database
     [XmlArray("answertext")]
     [XmlArrayItem("answer")]
     public string[] answerstext;
-    [XmlElement("answerType")]
-    public string answerType;
+    [XmlElement("answertype")]
+    public string answertype;
     [XmlElement("correctanswer")]
     public string correctanswer;
 }

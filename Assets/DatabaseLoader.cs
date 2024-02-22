@@ -8,17 +8,17 @@ public class DatabaseLoader : MonoBehaviour
     void Start()
     {
         // pobranie tekstu xml ze œcie¿ki
-        if (!File.Exists(Config.FilePathGlobal + "\\questions.xml"))
+        if (!File.Exists(Config.filePathGlobal + "\\questions.xml"))
         {
             Debug.Log("Creating Default XML");
-            File.WriteAllText(Config.FilePathGlobal + "\\questions.xml", Resources.Load<TextAsset>("XMLEXAMPLE").text);
+            File.WriteAllText(Config.filePathGlobal + "\\questions.xml", Resources.Load<TextAsset>("XMLEXAMPLE").text);
         }
-        TextAsset xmlAsset = new TextAsset(System.IO.File.ReadAllText(Config.FilePathGlobal + "\\questions.xml"));
+        TextAsset xmlAsset = new TextAsset(System.IO.File.ReadAllText(Config.filePathGlobal + "\\questions.xml"));
         // pobranie dokuemtu z zachowaniem jego cech
         XmlDocument xmlDoc = new XmlDocument();
         xmlDoc.LoadXml(xmlAsset.text);
 
-        XmlNodeList databases = xmlDoc.GetElementsByTagName("Database");
+        XmlNodeList databases = xmlDoc.GetElementsByTagName("questionform");
         ReadXML(databases);
     }
     public void ReadXML(XmlNodeList databases)
@@ -40,16 +40,16 @@ public class DatabaseLoader : MonoBehaviour
                     answerTexts[j] = answers[j].InnerText;
                 }
             }
-            string answerType = database.SelectSingleNode("answerType").InnerText;
+            string answertype = database.SelectSingleNode("answertype").InnerText;
             string correctanswer = database.SelectSingleNode("correctanswer").InnerText;
-
+            correctanswer = correctanswer.ToLower();
             db[i] = new Database()
             {
                 name = name,
                 question = question,
                 answerstext = answerTexts,
                 correctanswer = correctanswer,
-                answerType = answerType
+                answertype = answertype
             };
         }
     }
